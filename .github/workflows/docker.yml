@@ -25,21 +25,21 @@ jobs:
       # Runs a single command using the runners shell
       - name: docker build
         run: |
-          docker build ./c# -t aimvector/csharp:1.0.0
+          docker build ./c# -t chuimistro/csharp:1.0.0
           
       - name: docker build nodejs
         run: |
-          docker build ./nodejs -t aimvector/nodejs:1.0.0
+          docker build ./nodejs -t chuimistro/nodejs:1.0.0
         
       - name: docker build python
         run: |
-          docker build ./python -t aimvector/python:1.0.0
+          docker build ./python -t chuimistro/python:1.0.0
       - name: docker build golang
         run: |
-          docker build ./golang -t aimvector/golang:1.0.0
+          docker build ./golang -t chuimistro/golang:1.0.0
       - name: docker push
         run: |
-          docker push aimvector/csharp:1.0.0
-          docker push aimvector/nodejs:1.0.0
-          docker push aimvector/python:1.0.0
-          docker push aimvector/golang:1.0.0
+          docker push chuimistro/csharp:1.0.0
+          docker push chuimistro/nodejs:1.0.0
+          docker push chuimistro/python:1.0.0
+          docker push chuimistro/golang:1.0.0
